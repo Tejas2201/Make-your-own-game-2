@@ -51,12 +51,13 @@ class Form {
     });
 
     this.reset.mousePressed(()=>{
-      player.updateCount(0);
+      //player.updateCount(0);
       game.update(0);
     });
 
     this.start.mousePressed(()=>{
       gameState  = 1;
+      game.update(1);
     });
   }
 }
